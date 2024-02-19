@@ -14,10 +14,20 @@ function Perfil(props) {
                     <strong>{props.libro}</strong> fue escrito por {props.autor} de origen {props.pais}
                 </p>
                 <p className='cargo-perfil'>
-                  su genero literario es el {props.genero} y su editorial es {props.editorial}
+                    su genero literario es el {props.genero} y su editorial es {props.editorial}
                 </p>
                 <p className='texto-perfil'>{props.resumen}</p>
             </div>
+            {/*agregar botones para traer información*/}
+            <button onClick={() => window.open(props.pdf, '_blank')}>
+                obtener pdf
+            </button>
+            <button onClick={() => window.open(props.bio, '_blank')}>
+                biografia de la autora
+            </button>
+            <button onClick={() => window.open(props.fisico, '_blank')}>
+                comprar libro en fisico
+            </button>
         </div>
     );
 }
