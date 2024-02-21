@@ -20,13 +20,13 @@ function Perfil(props) {
             </div>
             {/*agregar botones para traer información*/}
             <button onClick={() => window.open(props.pdf, '_blank')}>
-                obtener pdf
+                Obtener pdf
             </button>
             <button onClick={() => window.open(props.bio, '_blank')}>
-                biografia de la autora
+                Biografia de la autora
             </button>
             <button onClick={() => window.open(props.fisico, '_blank')}>
-                comprar libro en fisico
+                Comprar libro en fisico
             </button>
         </div>
     );
