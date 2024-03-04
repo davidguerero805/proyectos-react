@@ -19,13 +19,13 @@ function Perfil(props) {
                 <p className='texto-perfil'>{props.resumen}</p>
             </div>
             {/*agregar botones para traer información*/}
-            <button onClick={() => window.open(props.pdf, '_blank')}>
+            <button onClick={() => window.open(props.pdf, '_blank')} className='boton-perfil'>
                 Obtener pdf
             </button>
-            <button onClick={() => window.open(props.bio, '_blank')}>
+            <button onClick={() => window.open(props.bio, '_blank')} className='boton-perfil' >
                 Biografia de la autora
             </button>
-            <button onClick={() => window.open(props.fisico, '_blank')}>
+            <button onClick={() => window.open(props.fisico, '_blank')} className='boton-perfil'>
                 Comprar libro en fisico
             </button>
         </div>
